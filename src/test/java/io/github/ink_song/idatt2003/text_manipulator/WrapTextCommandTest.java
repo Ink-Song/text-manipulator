@@ -3,12 +3,12 @@ package io.github.ink_song.idatt2003.text_manipulator;
 import static org.junit.jupiter.api.Assertions.*;
 class WrapTextCommandTest {
 
-  WrapTextCommand command = new WrapTextCommand("Open","Close");
+  WrapTextCommand command = new WrapTextCommand("<p>","</p>");
 
   @org.junit.jupiter.api.Test
   void execute() {
-    String result = command.execute("-Interstitial Text to be Wrapped-");
-    assertEquals(result,"Open-Interstitial Text to be Wrapped-Close");
+    String result = command.execute("Basic Text to be Wrapped");
+    assertEquals(result,"<p>Basic Text to be Wrapped</p>");
     System.out.println(result);
   }
 
