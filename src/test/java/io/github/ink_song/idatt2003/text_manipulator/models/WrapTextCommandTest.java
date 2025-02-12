@@ -1,4 +1,4 @@
-package io.github.ink_song.idatt2003.text_manipulator;
+package io.github.ink_song.idatt2003.text_manipulator.models;
 
 import static org.junit.jupiter.api.Assertions.*;
 class WrapTextCommandTest {

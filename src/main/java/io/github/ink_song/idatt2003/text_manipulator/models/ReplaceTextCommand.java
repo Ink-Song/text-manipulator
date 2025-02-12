@@ -1,4 +1,4 @@
-package io.github.ink_song.idatt2003.text_manipulator;
+package io.github.ink_song.idatt2003.text_manipulator.models;
 
 /**
  * A class designed to test the implementation of an interface,
