@@ -11,4 +11,9 @@ public class CapitalizeWordsTextCommand extends CapitalizeTextCommand {
     }
     return stringBuilder.toString().trim();
   }
+
+  @Override
+  public String toReadableString() {
+    return "Capitalize Words";
+  }
 }

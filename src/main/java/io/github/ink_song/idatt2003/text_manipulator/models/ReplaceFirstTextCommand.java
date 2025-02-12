@@ -9,4 +9,9 @@ public class ReplaceFirstTextCommand extends ReplaceTextCommand {
   public String execute(String text) {
     return text.replaceFirst(target, replacement);
   }
+
+  @Override
+  public String toReadableString() {
+    return "Replace First Instance";
+  }
 }

@@ -11,4 +11,9 @@ public class WrapSelectionTextCommand extends WrapTextCommand{
   public String execute(String text) {
     return text.replace(selection, super.execute(selection));
   }
+
+  @Override
+  public String toReadableString() {
+    return "Wrap Selection";
+  }
 }

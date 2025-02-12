@@ -9,4 +9,9 @@ public class CapitalizeTextCommand implements TextCommand {
     String remainder = text.substring(1);
     return firstLetter + remainder;
   }
+
+  @Override
+  public String toReadableString() {
+    return "Capitalize Text (Simple)";
+  }
 }

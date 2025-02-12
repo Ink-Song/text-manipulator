@@ -15,6 +15,11 @@ public class WrapTextCommand implements TextCommand {
     return opening + text + end;
   }
 
+  @Override
+  public String toReadableString() {
+    return "Wrap Text";
+  }
+
   public String getOpening() {
     return opening;
   }

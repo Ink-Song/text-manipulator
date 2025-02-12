@@ -14,4 +14,9 @@ public class CapitalizeSelectionTextCommand extends CapitalizeTextCommand {
   public String getSelection() {
     return selection;
   }
+
+  @Override
+  public String toReadableString() {
+    return "Capitalize Text Selection";
+  }
 }

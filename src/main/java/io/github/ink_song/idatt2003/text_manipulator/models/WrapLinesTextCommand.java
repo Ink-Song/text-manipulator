@@ -11,8 +11,13 @@ public class WrapLinesTextCommand extends WrapTextCommand {
     StringBuilder sb = new StringBuilder();
     for (String part : parts) {
       part = super.getOpening() + part + super.getEnd();
-      sb.append(part + "\n");
+      sb.append(part).append("\n");
     }
-    return sb.toString();
+    return sb.toString().trim();
+  }
+
+  @Override
+  public String toReadableString() {
+    return "Wrap Lines";
   }
 }
