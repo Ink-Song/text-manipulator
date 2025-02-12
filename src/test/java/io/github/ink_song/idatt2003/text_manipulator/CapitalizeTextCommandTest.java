@@ -9,7 +9,8 @@ class CapitalizeTextCommandTest {
   CapitalizeTextCommand command = new CapitalizeTextCommand();
   @Test
   void execute() {
-    String result = command.execute("capitalize me!");
+    String result = command.execute(" capitalize me!");
+    assertEquals("Capitalize me!", result);
     System.out.println(result);
   }
 }
