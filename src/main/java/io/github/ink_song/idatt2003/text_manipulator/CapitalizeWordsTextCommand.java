@@ -7,8 +7,8 @@ public class CapitalizeWordsTextCommand extends CapitalizeTextCommand {
     String[] words = text.split(" ");
     StringBuilder stringBuilder = new StringBuilder();
     for (String word : words) {
-      stringBuilder.append(super.execute(word));
+      stringBuilder.append(super.execute(word) + " ");
     }
-    return stringBuilder.toString();
+    return stringBuilder.toString().trim();
   }
 }
