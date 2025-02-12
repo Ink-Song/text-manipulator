@@ -10,6 +10,7 @@ class CapitalizeWordsTextCommandTest {
   @Test
   void execute() {
     String result = command.execute(" please capitalize all of these words for me");
+    assertEquals("Please Capitalize All Of These Words For Me", result);
     System.out.println(result);
   }
 }
