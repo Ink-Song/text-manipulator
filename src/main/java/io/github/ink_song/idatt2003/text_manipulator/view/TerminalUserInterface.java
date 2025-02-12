@@ -14,12 +14,13 @@ public class TerminalUserInterface {
   public void display(String[] commands){
     System.out.println("\n");
     for(int i = 0; i < commands.length; i++){
-      System.out.println(i + ". " + commands[i]);
+      System.out.println(i+1 + ". " + commands[i]);
     }
-    System.out.println("\n");
+    System.out.println("0. Exit\n");
   }
 
-  public String getUserInput(){
+  public String getUserInput(String prompt){
+    System.out.println(prompt);
     return scanner.nextLine();
   }
 }
