@@ -5,7 +5,8 @@ public class CapitalizeTextCommand implements TextCommand {
   public String execute(String text) {
     text = text.trim();
     //trim, get whatever is at the first index, change it to uppercase.
-    String[] parts = text.split(String.valueOf(text.charAt(0)));
-    return parts[0].toUpperCase() + parts[1];
+    String firstLetter = text.substring(0, 1).toUpperCase();
+    String remainder = text.substring(1);
+    return firstLetter + remainder;
   }
 }
