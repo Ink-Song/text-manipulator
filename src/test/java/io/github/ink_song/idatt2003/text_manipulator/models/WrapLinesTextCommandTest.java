@@ -10,7 +10,7 @@ class WrapLinesTextCommandTest {
   @Test
   void execute() {
     String tested = command.execute("This is the First Line\nThis is the Second Line");
-    assertEquals("<p>This is the First Line</p>\n<p>This is the Second Line</p>\n",tested);
+    assertEquals("<p>This is the First Line</p>\n<p>This is the Second Line</p>",tested);
     System.out.println(tested);
   }
 }

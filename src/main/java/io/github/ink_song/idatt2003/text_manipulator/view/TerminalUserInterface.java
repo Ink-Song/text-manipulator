@@ -4,10 +4,7 @@ import java.util.Scanner;
 
 public class TerminalUserInterface {
 
-  private Scanner scanner;
-  public void start(){
-    this.scanner = new Scanner(System.in);
-  }
+  private Scanner scanner = new Scanner(System.in);
   public void close(){
     scanner.close();
   }

@@ -1,7 +1,7 @@
 package io.github.ink_song.idatt2003.text_manipulator.models;
 
 public class ReplaceFirstTextCommand extends ReplaceTextCommand {
-  ReplaceFirstTextCommand(String target, String replacement) {
+  public ReplaceFirstTextCommand(String target, String replacement) {
     super(target, replacement);
   }
 
